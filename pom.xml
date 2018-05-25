@@ -27,7 +27,7 @@
         <repositories>
             <repository>
 	    <id>jitpack.io</id>
-	    <url>http://jitpack.io</url>
+	    <url>http://jitpack.io</url> <!-- *************necesario para libreria de arduino junto con dependencia-->
 	</repository>
         </repositories>    
         	
@@ -61,13 +61,39 @@
 </dependency>
 
 
-
+<!-- *************debepdencia para arduino org.rxtx PanamaHitek_Arduino-->
 	<dependency>
 	    <groupId>com.github.PanamaHitek</groupId>
 	    <artifactId>PanamaHitek_Arduino</artifactId>
 	    <version>3.0.0</version>
 	</dependency>
-
+        
+                <!-- *************plantilla pom spring boot norellanac-->
+                <!-- dependencia agregada manualmente -->
+		<dependency>
+		    <groupId>org.apache.tomcat.embed</groupId>
+		    <artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+		
+		<!-- dependencia agregada manualmente -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>jstl</artifactId>
+		</dependency>
+                
+		<!-- dependencia agregada manualmente -->
+		<dependency>
+		    <groupId>org.apache.tomcat.embed</groupId>
+		    <artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+		
+		<!-- dependencia agregada manualmente -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>jstl</artifactId>
+		</dependency>
+        
+        
 	</dependencies>
 
 	<build>
